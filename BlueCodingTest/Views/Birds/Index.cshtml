@@ -1,0 +1,27 @@
+﻿@model List<Birds>
+
+<table border="1" style="border-collapse: separate; border-spacing: 15px;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Origin</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr id="@item.Id">
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Color
+            </td>
+            <td>
+                @item.Origin
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
